@@ -303,6 +303,10 @@ hr
     color: white;
     cursor: pointer;
 }
+.row .letters .box .box-letter.hide
+{
+    visibility: hidden;
+}
 .row .letters .box .box-letter.finsh
 {
     cursor: default;

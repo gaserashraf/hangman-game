@@ -106,6 +106,7 @@ for(var i=0;i<arrCharButtons.length;i++)
                 while(pos > -1) 
                 {
                     arrCharWord[pos].classList.remove('hide');
+                    this.classList.add('hide');
                     pos = randWord.indexOf(this.textContent, pos+1);
                     numCorrect++;
                 }
@@ -125,6 +126,7 @@ for(var i=0;i<arrCharButtons.length;i++)
                     arrStandDiv[currentStandPos].classList.remove('hide');
                     currentStandPos++;
                     numOfChances.textContent=numOfChances.textContent-1;
+                    this.classList.add('hide');
                 }
                 if(numOfChances.textContent==0)
                 {
