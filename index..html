@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Hangman game">
+        <title>Hangman game</title>
+        <style></style>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+        <div class="gameOver hide" id='go'>
+            <img src="images/gameOver.png">
+            <button id='try'>Try Again</button>
+        </div>
+        <div class="Win hide" id='win'>
+            <img src="images/Win.jpg">
+            <button id='try1'>Play Again</button>
+        </div>
+        <div class="body" id='body'>
+            
+            <div class="game">
+                <div class="name-game">Hangman</div>
+                <div class="catagory">Word from:<span id='catagory'></span></div>
+                <div class="clear"></div>
+                <hr>
+                <div class="row">
+                    
+                    <div class="hang-draw">
+                        <div id='chances'>You have <span id='num-chances'>8</span> chances</div>
+                        <div class="stand1"></div>
+                        <div class="stand2 hide"></div>
+                        <div class="stand3 hide"></div>
+                        <div class="stand4 hide"></div>
+                        <div class="hang hide"></div>
+                        <div class="head hide"></div>
+                        <div class="b hide"></div>
+                        <div class="hand hide"></div>
+                        <div class="legs hide"></div>
+                        
+                    </div>
+                    <div class="letters">
+                        <div class="box" id='box'>
+                            
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="letter-guess" id='lg'>
+                </div>
+            </div>
+    </div>
+        <script src="js/javascript.js"></script>
+    </body>
+</html>  
