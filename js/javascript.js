@@ -43,6 +43,7 @@ for(var i=0;i<numOfChar;i++)
     div.appendChild(span);
     letGu.appendChild(div);
 }
+
 var arrCharWord=Array.from(document.querySelectorAll('.letter-guess .char span'));
 var w=75*numOfChar;
 letGu.style.width=w+'px'
@@ -75,11 +76,11 @@ function Gameover()
     body.classList.add('game-over');
     L=true;
     reomveCursorFromLetters();
+    document.getElementById('gameOverWord').textContent='The word is '+randWord;
 }
 function Resset()
 {
     location.reload();
-
 }
 
 //make win
@@ -93,6 +94,38 @@ function Win()
 //onclick buttons
 var numCorrect=0;
 
+
+// aduio
+
+function playAudio(url) {
+    new Audio(url).play();
+}
+/*var audio = new Audio("audio/sc.wav" ) ;
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
+var audio1 = new Audio("audio/fail.mp3" ) ;
+
+audio1.oncanplaythrough = function(){
+audio1.play();
+}
+
+audio1.loop = true;
+
+audio1.onended = function(){
+audio1.play();
+}*/
+
+//<input type="image" src="http://button.png" onclick="audio.play()"></input>
+
+
 for(var i=0;i<arrCharButtons.length;i++)
 {
     arrCharButtons[i].onclick=function()
@@ -102,6 +135,7 @@ for(var i=0;i<arrCharButtons.length;i++)
         {
             if(!W&&!L)//if not win
             {
+                playAudio("audio/sc.wav");
                 var pos = randWord.indexOf(this.textContent);
                 while(pos > -1) 
                 {
@@ -121,6 +155,7 @@ for(var i=0;i<arrCharButtons.length;i++)
         {
             if(!W&&!L)//if not win
             {
+                playAudio("audio/fail.mp3");
                 if(numOfChances.textContent>0)
                 {
                     arrStandDiv[currentStandPos].classList.remove('hide');

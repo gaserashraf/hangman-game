@@ -1,334 +1,746 @@
-.body
+body
 {
-    background-image: url(../images/wall2.jpg);
-    background-size: 2100px 1240px;
-    height: 752px;
-    margin-top: -19px;
-}
-.body.game-over
-{
-    opacity: .3;      
-}
-/*game over*/
-.gameOver
-{
-    position: absolute;
-    width: 800px;
-    height: 375px;
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 3s ;
-}
-.gameOver img
-{
-    position: absolute;
-    width: 100%;
-    top: 200px;
-    left:380px;
-}
-.gameOver button
-{
-    position: absolute;
-    top: 517px;
-    left: 726px;
-    border: none;
-    border-radius: 3px;
-    background: teal;
-    color: white;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 15px 25px;
-    margin-bottom: 70px;
-    cursor: pointer;
-}
-.gameOver.hide
-{
-    opacity: 0;
-    visibility: hidden;
-
-}
-/*game over*/
-
-/*win*/
-.Win
-{
-    position: absolute;
-    width: 800px;
-    height: 375px;
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 3s ;
-}
-.Win img
-{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 200px;
-    left:380px;
-}
-.Win button
-{
-    position: absolute;
-    top: 517px;
-    left: 726px;
-    border: none;
-    border-radius: 3px;
-    background: teal;
-    color: white;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 15px 25px;
-    margin-bottom: 70px;
-    cursor: pointer;
-}
-.Win.hide
-{
-    opacity: 0;
-    visibility: hidden;
-
-}
-/*win*/
-.clear
-{
-    clear: both;
-}
-hr
-{
-    height: 4px;
-    border: none;
-    background-color: thistle;
-    margin: 12px;
-}
-#catagory
-{
-    color: tomato;
-}
-.game
-{
-    padding-top: 50px;
     font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    width:70%;
-    margin: 20px auto;
-    
-    
-}
-.game .name-game
-{
-    float: left;
-}
-.game .catagory
-{
-    float: right;
-}
 
-.row
-{
-    width: 100%;
-    height: 400px;
-    
 }
-.row div
-{
-    float: left;
-    
-}
-.row #chances
-{
-    position: absolute;
-    top:10px;
-    left: 5px;
-}
-.row #chances span
-{
-    color: tomato;
-}
-/* draw gangman*/
-.row .hang-draw
-{
-    width: 49%;
-    background-color: #80b8b8;
-    border: 4px solid #444 ;
-    border-radius: 5px;
-    height: 100%;
-    position: relative;
-    
-}
-.row .hang-draw .hide
-{
-    visibility: hidden;
-}
-.row .hang-draw .stand1
-{
-    position: absolute;
-    width: 60px;
-    background-color: #444;
-    height: 4px;
-    top:90%;
-    left: 40%;
-    
-}
-.row .hang-draw .stand2
-{
-    position: absolute;
-    width: 4px;
-    background-color: #444;
-    height: 280px;
-    top: 80px;
-    left: 45.3%;
-}
-.row .hang-draw .stand3
-{
-    position: absolute;
-    height: 4px;
-    background-color: #444;
-    width: 130px;
-    top: 100px;
-    left: 45.3%;
-}
-.row .hang-draw .stand4
-{
-    position: absolute;
-    width: 4px;
-    background-color: #444;
-    height: 50px;
-    top: 100px;
-    left: 69%;
-}
-.row .hang-draw .hang
-{
-    width: 53px;
-    height: 53px;
-    position: absolute;
-    border: 4px dashed #444;
-    border-radius: 50%;
-    top: 150px;
-    left: 64%;
-}
-.row .hang-draw .head
-{
-    width: 38px;
-    height: 38px;
-    position: absolute;
-    border: 4px solid #444;
-    border-radius: 50%;
-    top: 158px;
-    left: 65.5%;
-}
-.row .hang-draw .b
-{
-    position: absolute;
-    width: 4px;
-    background-color: #444;
-    height: 120px;
-    
-    top: 203px;
-    left: 69.3%;
-    
-}
-.row .hang-draw .hand:before
-{
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #444;
-    height: 50px;
-    top: 220px;
-    left: 65.5%;
-    transform:rotate(45deg);
-}
-.row .hang-draw .hand:after
-{
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #444;
-    height: 50px;
-    top: 220px;
-    left: 73%;
-    transform:rotate(-45deg);
-}
-.row .hang-draw .legs:before
-{
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #444;
-    height: 50px;
-    top: 310px;
-    left: 65.5%;
-    transform:rotate(45deg);
-}
-.row .hang-draw .legs:after
-{
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #444;
-    height: 50px;
-    top: 310px;
-    left: 73%;
-    transform:rotate(-45deg);
-}
+@media (min-width:1110px) 
+ {
+    .body
+    {
+        background-image: url(../images/wall2.jpg);
+        background-size: 2100px 1240px;
+        height: 752px;
+        margin-top: -19px;
+        
+    }
+    .body.game-over
+    {
+        opacity: .3;      
+    }
+    /*game over*/
+    .gameOver
+    {
+        position: absolute;
+        width: 800px;
+        height: 375px;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 3s ;
+    }
+    .gameOver img
+    {
+        position: absolute;
+        width: 100%;
+        top: 200px;
+        left:380px;
+    }
+    .gameOver span
+    {
+        position: absolute;
+        top: 157px;
+        left: 578px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #444;
+        border-bottom: 5px solid;
+        padding-bottom: 5px;
+    }
+    .gameOver button
+    {
+        position: absolute;
+        top: 517px;
+        left: 726px;
+        border: none;
+        border-radius: 3px;
+        background: teal;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 15px 25px;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .gameOver.hide
+    {
+        opacity: 0;
+        visibility: hidden;
 
-/* end hangman*/
+    }
+    /*game over*/
 
-.row .letters
-{
-    width: 50%;
-    height:100% ;
+    /*win*/
+    .Win
+    {
+        position: absolute;
+        width: 800px;
+        height: 375px;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 3s ;
+    }
+    .Win img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 200px;
+        left:380px;
+    }
+    .Win button
+    {
+        position: absolute;
+        top: 517px;
+        left: 726px;
+        border: none;
+        border-radius: 3px;
+        background: teal;
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 15px 25px;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .Win.hide
+    {
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    /*win*/
+    .clear
+    {
+        clear: both;
+    }
+    hr
+    {
+        height: 4px;
+        border: none;
+        background-color: thistle;
+        margin: 12px;
+    }
+    #catagory
+    {
+        color: tomato;
+    }
+    .game
+    {
+        padding-top: 50px;
+        font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        width:70%;
+        margin: 20px auto;
+        
+        
+    }
+    .game .name-game
+    {
+        float: left;
+    }
+    .game .catagory
+    {
+        float: right;
+    }
+
+    .row
+    {
+        width: 100%;
+        height: 400px;
+        
+    }
+    .row div
+    {
+        float: left;
+        
+    }
+    .row #chances
+    {
+        position: absolute;
+        top:10px;
+        left: 5px;
+    }
+    .row #chances span
+    {
+        color: tomato;
+    }
+    /* draw gangman*/
+    .row .hang-draw
+    {
+        width: 49%;
+        background-color: #80b8b8;
+        border: 4px solid #444 ;
+        border-radius: 5px;
+        height: 100%;
+        position: relative;
+        
+    }
+    .row .hang-draw .hide
+    {
+        visibility: hidden;
+    }
+    .row .hang-draw .stand1
+    {
+        position: absolute;
+        width: 60px;
+        background-color: #444;
+        height: 4px;
+        top:90%;
+        left: 40%;
+        
+    }
+    .row .hang-draw .stand2
+    {
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 280px;
+        top: 80px;
+        left: 45.3%;
+    }
+    .row .hang-draw .stand3
+    {
+        position: absolute;
+        height: 4px;
+        background-color: #444;
+        width: 130px;
+        top: 100px;
+        left: 45.3%;
+    }
+    .row .hang-draw .stand4
+    {
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 100px;
+        left: 69%;
+    }
+    .row .hang-draw .hang
+    {
+        width: 53px;
+        height: 53px;
+        position: absolute;
+        border: 4px dashed #444;
+        border-radius: 50%;
+        top: 150px;
+        left: 64%;
+    }
+    .row .hang-draw .head
+    {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        border: 4px solid #444;
+        border-radius: 50%;
+        top: 158px;
+        left: 65.5%;
+    }
+    .row .hang-draw .b
+    {
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 120px;
+        
+        top: 203px;
+        left: 69.3%;
+        
+    }
+    .row .hang-draw .hand:before
+    {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 220px;
+        left: 65.5%;
+        transform:rotate(45deg);
+    }
+    .row .hang-draw .hand:after
+    {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 220px;
+        left: 73%;
+        transform:rotate(-45deg);
+    }
+    .row .hang-draw .legs:before
+    {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 310px;
+        left: 65.5%;
+        transform:rotate(45deg);
+    }
+    .row .hang-draw .legs:after
+    {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 310px;
+        left: 73%;
+        transform:rotate(-45deg);
+    }
+
+    /* end hangman*/
+
+    .row .letters
+    {
+        width: 50%;
+        height:100% ;
+        
+    }
+    .row .letters .box
+    {
+        padding: 15px;
+        text-align: center;
+    }
+    .row .letters .box .box-letter
+    {
+        text-transform: uppercase;
+        display: inline-block;
+        width: 20px;
+        padding: 17px 20px;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: teal;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        color: white;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .row .letters .box .box-letter:hover
+    {
     
-}
-.row .letters .box
-{
-    padding: 15px;
-    text-align: center;
-}
-.row .letters .box .box-letter
-{
-    text-transform: uppercase;
-    display: inline-block;
-    width: 20px;
+        background-color: rgb(1, 75, 75);
+        
+    }
+    .row .letters .box .box-letter.hide
+    {
+        visibility: hidden;
+    }
+    .row .letters .box .box-letter.finsh
+    {
+        cursor: default;
+    }
+    /* letter guess*/
+    .letter-guess
+    {
+        width: auto;
+        margin: auto;
+    }
+    .letter-guess div
+    {
+        text-align: center;
+        width:55px;
+        display: inline-block;
+        margin-right: 20px;
+        color: teal;
+        font-size: 30px;
+        font-weight: bold;
+        border-bottom: 4px solid #444;
+    }
+    .letter-guess .hide
+    {
+        visibility: hidden;
+    }
+ }
 
-    padding: 17px 20px;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: teal;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    color: white;
-    cursor: pointer;
-}
-.row .letters .box .box-letter.hide
-{
-    visibility: hidden;
-}
-.row .letters .box .box-letter.finsh
-{
-    cursor: default;
-}
-/* letter guess*/
-.letter-guess
-{
-    width: auto;
-    margin: auto;
-}
-.letter-guess div
-{
-    text-align: center;
-    width:55px;
-    display: inline-block;
-    margin-right: 20px;
-    color: teal;
-    font-size: 30px;
-    font-weight: bold;
-    border-bottom: 4px solid #444;
-}
-.letter-guess .hide
-{
-    visibility: hidden;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+/*for mobile*/
+@media only screen 
+and (min-width : 10px) 
+and (max-width : 1099px)
+ {
+    .body
+    {
+            height: 2131px;
+        background-image: url(../images/wall2.jpg);
+         /* Background image is centered vertically and horizontally at all times */
+         background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+        margin-top: -19px;
+        
+    }
+    .body.game-over
+    {
+        opacity: .3;      
+    }
+    /*game over*/
+    .gameOver
+    {
+        position: absolute;
+        width: 400px;
+        height: 375px;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 3s ;
+    }
+    .gameOver img
+    {
+        position: absolute;
+        width: 800px;
+        top: 555px;
+        left: 80px;
+    
+    }
+    .gameOver span
+    {
+        position: absolute;
+        top: 449px;
+        left: 229px;
+        width: 624px;
+        font-size: 5vw;
+        font-weight: bold;
+        color: #444;
+    }
+    .gameOver button
+    {
+        position: absolute;
+        top: 848px;
+        left: 347px;
+        border: none;
+        border-radius: 3px;
+        background: teal;
+        color: white;
+        text-transform: uppercase;
+        font-size: 4vw;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 15px 25px;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .gameOver.hide
+    {
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    /*game over*/
+
+    /*win*/
+    .Win
+    {
+        position: absolute;
+        width: 400px;
+        height: 375px;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 3s ;
+    }
+    .Win img
+    {
+        position: absolute;
+        height: 100%;
+        width: 608px;
+        top: 583px;
+        left: 182px;
+    }
+    .Win button
+    {
+        position: absolute;
+        top: 871px;
+        left: 338px;
+        border: none;
+        border-radius: 3px;
+        background: teal;
+        color: white;
+        text-transform: uppercase;
+        font-size: 4vw;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 15px 25px;
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+    .Win.hide
+    {
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    /*win*/
+    .clear
+    {
+        clear: both;
+    }
+    hr
+    {
+        height: 4px;
+        border: none;
+        background-color: thistle;
+        margin: 12px;
+    }
+    #catagory
+    {
+        color: tomato;
+    }
+    .game
+    {
+        padding-top: 50px;
+        font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        width:90%;
+        margin: 5px auto;
+        
+        
+    }
+    .game .name-game
+    {
+        float: left;
+        font-size: 5vw;
+    }
+    .game .catagory
+    {
+        float: right;
+        font-size: 5vw;
+    }
+
+    .row
+    {
+        width: 100%;
+        height: 400px;
+        
+    }
+    .row div
+    {
+        float: left;
+        
+    }
+    .row #chances
+    {
+        position: absolute;
+        top:10px;
+        left: 5px;
+        font-size: 5vw;
+    }
+    .row #chances span
+    {
+        color: tomato;
+    }
+    /* draw gangman*/
+    .row .hang-draw
+    {
+        width: 100%;
+        background-color: #80b8b8;
+        border: 4px solid #444 ;
+        border-radius: 5px;
+        height: 100%;
+        position: relative;
+        
+    }
+    .row .hang-draw .hide
+    {
+        visibility: hidden;
+    }
+    .row .hang-draw .stand1
+    {
+        position: absolute;
+        width: 60px;
+        background-color: #444;
+        height: 4px;
+        top:90%;
+        left: 42%;
+        
+    }
+    .row .hang-draw .stand2
+    {
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 280px;
+        top: 80px;
+        left: 45.3%;
+    }
+    .row .hang-draw .stand3
+    {
+        position: absolute;
+        height: 4px;
+        background-color: #444;
+        width: 130px;
+        top: 100px;
+        left: 45.3%;
+    }
+    .row .hang-draw .stand4
+    {
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 100px;
+        left: 60%;
+    }
+    .row .hang-draw .hang
+    {
+        width: 53px;
+        height: 53px;
+        position: absolute;
+        border: 4px dashed #444;
+        border-radius: 50%;
+        top: 150px;
+        left: 57%;
+    }
+    .row .hang-draw .head
+    {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        border: 4px solid #444;
+        border-radius: 50%;
+        top: 158px;
+        left: 57.8%;
+    }
+    .row .hang-draw .b
+    {
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 120px;
+        
+        top: 203px;
+        left: 60.3%;
+        
+    }
+    .row .hang-draw .hand:before
+    {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 220px;
+        left: 58.2%;
+        transform:rotate(45deg);
+    }
+    .row .hang-draw .hand:after
+    {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 220px;
+        left: 62%;
+        transform:rotate(-45deg);
+    }
+    .row .hang-draw .legs:before
+    {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 310px;
+        left: 58.2%;
+        transform:rotate(45deg);
+    }
+    .row .hang-draw .legs:after
+    {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #444;
+        height: 50px;
+        top: 310px;
+        left: 62%;
+        transform:rotate(-45deg);
+    }
+
+    /* end hangman*/
+
+    .row .letters
+    {
+        width: 100%;
+        height:100% ;
+        
+    }
+    .row .letters .box
+    {
+        padding: 15px;
+        text-align: center;
+    }
+    .row .letters .box .box-letter
+    {
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        width: 5vw;
+
+        padding: 1.5vw 3vw;
+        font-size: 6vw;
+        font-weight: bold;
+        background-color: teal;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        color: white;
+        cursor: pointer;
+        border-radius: 1.5vw;
+    }
+    .row .letters .box .box-letter:active
+    {
+    
+        background-color: rgb(1, 75, 75);
+        
+    }
+    .row .letters .box .box-letter.hide
+    {
+        visibility: hidden;
+    }
+    .row .letters .box .box-letter.finsh
+    {
+        cursor: default;
+    }
+    /* letter guess*/
+    .letter-guess
+    {
+        width: auto;
+        margin: auto;
+        margin-top: 60px;
+        height: 500px;
+    }
+    .letter-guess div
+    {
+        margin-top: 60px;
+        float: left;
+        text-align: center;
+        width:5vw;
+        margin-right: 20px;
+        color: teal;
+        font-size: 6vw;
+        font-weight: bold;
+        border-bottom: 4px solid #444;
+        margin-bottom: 20px;
+    }
+    .letter-guess .hide
+    {
+        visibility: hidden;
+    }
+ }
