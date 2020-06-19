@@ -7,5 +7,3 @@ for normal screen
 
 for mobile screen(responsive)
 ![Demo1](gif2.gif)
-
-![Finsh](Capture.PNG)
